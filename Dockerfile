@@ -17,6 +17,7 @@ RUN apt-get update -qqy \
     libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxss1 libxtst6 \
     libappindicator1 libnss3 libnss3-tools libasound2 libatk1.0-0 libc6 ca-certificates fonts-liberation \
     libatk-bridge2.0-0 libgbm1 lsb-release xdg-utils wget unzip \
+    fonts-wqy-microhei fonts-wqy-zenhei\
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
 RUN wget -q -O chrome-linux.zip "$DOWNLOAD_HOST/chromium-browser-snapshots/Linux_x64/$REVISION/chrome-linux.zip" \
